@@ -44,7 +44,4 @@ function Header(){
   );
 }
 
-function Abc(){
-  return(<>==========</>);
-}
 export default Header;

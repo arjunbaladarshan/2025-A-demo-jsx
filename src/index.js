@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './parts/Header';
 import Footer from './parts/Footer';
-import Sidebar from './parts/Sidebar';
+import { Sidebar } from './parts/Sidebar';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
