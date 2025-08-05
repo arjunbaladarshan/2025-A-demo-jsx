@@ -1,17 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Header from './parts/Header';
+import Footer from './parts/Footer';
+import Sidebar from './parts/Sidebar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <>
+    <div className="container">
+      {/* <!-- header start --> */}
+      <div className="row">
+        <div className="col border border-primary">
+          <Header />
+        </div>
+      </div>
+      {/* <!-- header ends --> */}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+      <div className="row">
+        <div className="col-3 border border-primary">
+          <Sidebar />
+        </div>
+        <div className="col border border-primary">
+          <h1>This is home page</h1>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col border border-primary">
+          <Footer />
+        </div>
+      </div>
+    </div>
+    
+  </>
+);
